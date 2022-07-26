@@ -1,0 +1,154 @@
+/*https://coolors.co/2b2e34-7c9082-f6ae2d-f3e8ee-f9f8f8*/
+
+body {
+    background-color: #2B2E34;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 3em;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height: 100%;
+}
+
+.main-body-sections {
+    border: 2px solid #F3E8EE;
+    border-radius: 50px;
+
+    height: 1000px;
+    margin: 1rem;
+    background-color: #F3E8EE;
+}
+
+.section-titles {
+    font-family: 'Nunito', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+.main-body-sections p {
+    font-family: 'Nunito', serif;
+    font-style: normal;
+}
+
+#new-maps {
+    width: 30%;
+
+}
+
+#new-articles {
+    width: 40%;
+}
+
+#new-records {
+    width: 30%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo-div {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    object-fit: scale-down;
+    overflow: hidden;
+
+}
+
+.logo-div img {
+    height: 100%;
+    width: 250px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 0px;
+
+    width: 480px;
+    height: 80px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-button {
+    display: flex;
+    width: 120px;
+    height: 80px;
+    /*flex: none;*/
+    /*flex-grow: 0;*/
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#home {
+    order: 0;
+}
+
+#maps {
+    order: 1;
+}
+
+#records {
+    order: 2;
+}
+
+#faqs {
+    order: 3;
+}
+
+.nav-button a {
+    font-family: 'Nunito', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-decoration: none;
+    color: #F9F8F8;
+}
+
+.nav-button a:hover {
+    color: #F6AE2D;
+}
+
+footer {
+    height: 50px;
+    order: 3;
+    margin-top: 3em;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: #F9F8F8;
+
+}
