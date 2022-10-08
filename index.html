@@ -33,7 +33,15 @@
 <main>
 
     <div class="main-body">
-        <div class="main-body-sections" id="new-maps"><p class="section-titles">New Maps</p></div>
+        <div class="main-body-sections" id="new-maps"><p class="section-titles">New Maps</p>
+        <script>
+            let huh = fetch("./assets/data/maps.json")
+                .then(response => {
+                    return response.json();
+                });
+            console.log(huh);
+        </script>
+        </div>
         <div class="main-body-sections" id="new-articles"><p class="section-titles">New Articles</p></div>
         <div class="main-body-sections" id="new-records"><p class="section-titles">New Records</p></div>
     </div>
